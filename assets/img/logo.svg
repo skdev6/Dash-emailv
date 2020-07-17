@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_255" data-name="Rectangle 255" width="80" height="80" transform="translate(15 19)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Rectangle_229" x="-15" y="-15" width="110" height="110" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#0c3836" flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00b8ba"/>
+      <stop offset="0.999" stop-color="#00ffed"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-15 -19)" clip-path="url(#clip-path)">
+    <g id="Group_1070" data-name="Group 1070" transform="translate(5 9)">
+      <g transform="matrix(1, 0, 0, 1, 10, 10)" filter="url(#Rectangle_229)">
+        <rect id="Rectangle_229-2" data-name="Rectangle 229" width="80" height="80" rx="13" fill="#2c2c96"/>
+      </g>
+      <g id="Group_898" data-name="Group 898" transform="translate(32 30)">
+        <g id="Group_897" data-name="Group 897">
+          <path id="Path_485" data-name="Path 485" d="M424.736,1076.68l-.19-.134a18.183,18.183,0,1,1,29.181-14.48v3.388H435.543v-6.779h10.892a11.406,11.406,0,1,0-17.787,12.475l-1.885,2.479Z" transform="translate(-417.36 -1043.883)" fill="#fff"/>
+        </g>
+        <path id="Path_486" data-name="Path 486" d="M448.833,1058.6l-16.7,8.868-6.586-4.269h0l8.8,11.984,14.48-16.583Z" transform="translate(-412.466 -1035.09)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

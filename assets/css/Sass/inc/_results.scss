@@ -1,0 +1,30 @@
+.results-box-wrapper{
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	.e-info-text{
+		 position: relative;
+		 padding-right: 28px;
+		.delete-btn{ 
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 17px;
+		}
+	}
+	.lg-round-box{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+		margin-bottom:30px;
+	}
+}
+
+.count-list-info{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	li{
+		margin-bottom: 12px; 
+	}
+}

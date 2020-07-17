@@ -1,0 +1,188 @@
+.email_list_area_wrapper{
+	.top-info{
+		margin-bottom: 30px;
+		.panel-title {
+			line-height: 1;
+			margin-bottom: 0;
+		}
+	}
+}
+.list_filter_area h5 {
+	font-size: 18px;
+	margin-bottom: 0;
+	line-height: 1;
+	margin-right: 26px;
+}
+.collection-view{
+	.icon{
+		color: #BECAE6;
+		display: inline-block;
+		font-size: 18px;
+		cursor: pointer;
+		@include transition(all 0.25s);
+		margin-right: 15px;
+		&:last-child{
+			margin-right: 0;
+		}
+		&:hover{
+			color: #7081B9;
+		}
+	}
+	.selected.icon{
+		color: #7081B9;
+	}
+}
+
+.email-card-area{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px;
+	margin-bottom: 15px; 
+	.status-info-area{
+		width: 100%;
+		p{
+			margin-bottom: 0;
+			color: var(--c-info);
+			strong{
+				color: #161637; 
+				font-weight: 500;
+				margin-right: 5px;
+				display: inline-block;
+			}
+		}
+		.info-item{
+			margin-right: 15px;
+			display: inline-block; 
+		}
+	}
+	.progress-bar-area{
+		margin-right: 60px;
+	}
+	.bottom-btn {
+		display: none;
+	}
+}
+.e-info-text{
+	.icon-receipt{
+		padding: 10px;
+		height: 60px;
+		width: 60px;
+		text-align: center;
+		line-height: 37px;
+		border: 1px solid #BECAE6;
+		display: inline-block;
+		color: #BECAE6;
+		border-radius: 10px;
+		font-size: 23px;
+		margin-right: 17px;
+	}
+	.text-info{
+		display: inline-block; 
+		h6{
+			font-size: 15px;
+			font-weight: 500;
+			color: #161637;
+			margin-bottom: 3px;
+			line-height: 20px;
+			.lg-dot{
+				margin-right: 10px;
+				display: inline-block;
+			}
+		}
+		.email-count{
+			color: #161637;
+			margin-bottom: 3px;
+			.icon{
+				color: var(--c-info);
+				margin-right: 4px;
+				display: inline-block;
+				font-size: 13px;
+			}
+		}
+		small{
+			color: var(--c-info);
+			font-size: 13px;
+		}
+	}
+}
+.email-card-area.complete-item{
+	.e-info-text .icon-receipt{
+		background-color: var(--c-blue);
+		border-color:  var(--c-blue);
+		color: #fff; 
+		box-shadow: 0 2px 13px rgba(0,0,0,.2);
+	}
+	.play-icon{
+		color:#00DCD3;
+	}
+}
+.list_filter_area h5 {
+	display: inline-block;
+}
+.play-icon{
+	background-color: transparent;
+	border: transparent;
+	color: #BECAE6;
+	font-size: 22px;
+}
+
+.email-card-box-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 100%;
+	flex: 1 0 100%;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+	.e-card-box{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 10px;
+		width: 33.333333%;
+		@media #{$md_device}{
+			width: 50%;
+		}
+		@media #{$sm_device}{
+			width: 100%; 
+		}
+		.email-card-area{
+			height: 100%;
+		}
+		.col-lg-4,.col-lg-8 {
+			width: 100%;
+		}
+		.play-icon {
+			display: none;
+		}
+		.bottom-btn{
+			display: block;
+		}
+		.status-info-area .info-item {
+			display: block !important;
+			margin-bottom: 5px;
+		}
+		.status-info-area {
+			margin-left: 66px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			@media #{$lg_device}{
+				margin-left: 30px;
+			}
+			@media #{$md_device}{
+				margin-left: 0;
+			}
+
+		}
+		.status-info-area p strong {
+			width: 65px;
+		}
+	}
+	.progress-bar-area {
+		margin-top: 56px;
+		margin-bottom: 58px;
+		margin-right: 0 !important;
+	}
+}

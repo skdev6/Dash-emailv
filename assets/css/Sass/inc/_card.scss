@@ -1,0 +1,82 @@
+.fileinit-wrapper{
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	.nav-item{
+		.btn {
+			font-size: 15px;
+			padding: 15px 14px;
+			width: 100%;
+			margin-bottom: 13px;
+		}
+		.btn.active{
+			background: var(--c-blue);
+			color: #fff;
+		}
+	}
+	.file-right-box {
+		height: 100%;
+	}
+	.tab-pane {
+		height: 100%;
+	}
+}
+.file-up-box {
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative;
+	border: 1px dashed #BECAE6;
+	border-radius: 10px;
+	input[type="file"]{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;z-index: 5;
+		opacity: 0;
+		cursor: pointer;
+	}
+	.text-info{
+		text-align: center;
+		color: var(--c-info);
+		font-size: 13px;
+		i{
+			display: block;
+			margin-bottom:14px;
+			margin-top: 9px; 
+			font-size: 26px; 
+		}
+	}
+}
+.integrations-box {
+	padding: 13px;
+	border: 1px solid #BECAE6;
+	border-radius: 10px;
+}
+.icon-inline-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: -13px;
+}
+.icon-inline-list li a {
+  display: inline-block;
+}
+.icon-inline-list li a img {
+  max-width: 58px; 
+}
+.icon-inline-list li {
+  display: inline-block;
+  margin-bottom: 13px;
+  margin-right: 8px;
+}
+
+

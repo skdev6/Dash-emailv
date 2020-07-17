@@ -1,0 +1,20 @@
+.search-box-field{
+	position: relative;
+	input{
+		border: 1px solid #BECAE6;
+		padding: 21px 60px 20px  20px;
+		border-radius: 10px;
+	}
+	button{
+		position: absolute;
+		top: 50%;
+		@include transform(translateY(-50%));
+		right: 0;
+		background-color: transparent;
+		border-color: transparent;
+		font-size: 22px;
+		color: #BECAE6;
+		height: 100%;
+		padding: 15px 20px;
+	}
+}
