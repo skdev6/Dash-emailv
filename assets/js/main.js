@@ -103,5 +103,40 @@ function header_fun(){
 
 	});
 
+	// Line Chart Scripts
+	// Line Chart Scripts
+
+	 new Chart($("#lineChart"), {
+	    type: 'line',
+	    data: {
+	        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"],
+	        datasets: [
+	        	{ label: "Deliverable", fill: !1, backgroundColor: "#00DCD3", borderColor: "#00DCD3", radius:4, data: [40, -20, 50, -40, 20, 30, 60, 25, 20, 40] },
+	            { label: "Invalid", fill: !1, backgroundColor: "#FF3838", borderColor: "#FF3838",radius:4, data: [-90, -50, -70, 20, -35, 20, 10, 50, 30, 80] },
+	            { label: "Risky", fill: !1, backgroundColor: "#FFAB38", borderColor: "#FFAB38", borderDash: [5, 5],radius:4, data: [10, -50, 30, -80, 50, -30, 30, -80, 10, -10] },
+	        ],
+	    },
+	    options: {
+	        responsive: !0,
+	        tooltips: { mode: "index", intersect: !1 },
+	        hover: { mode: "nearest", intersect: !0 },
+	        scales: {
+	            xAxes: [{ display: !0, gridLines: { color: "rgba(137, 151, 189, 0.15)" }, ticks: { fontColor: "#8997bd" } }],
+	            yAxes: [{ gridLines: { color: "rgba(137, 151, 189, 0.15)" }, ticks: { max: 100, min: -100, stepSize: 20, fontColor: "#8997bd" } }],
+	        },
+	        legend:{
+	        	display: true,
+	        	position:"bottom",
+	        	align:"start",
+	        	labels:{
+	        		usePointStyle: true,
+	        		radius:0,
+	        		fontSize: 15, 
+                	fontColor: '#161637'
+	        	}
+	        }
+	    }
+	});
+
 
 });
