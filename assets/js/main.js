@@ -106,6 +106,12 @@ function header_fun(){
 	// Line Chart Scripts
 	// Line Chart Scripts
 
+	if ($("#lineChart").attr('legend') === 'false') {
+		var legendOp = false;
+	}else{
+		var legendOp = true;
+	}
+
 	 new Chart($("#lineChart"), {
 	    type: 'line',
 	    data: {
@@ -125,7 +131,7 @@ function header_fun(){
 	            yAxes: [{ gridLines: { color: "rgba(137, 151, 189, 0.15)" }, ticks: { max: 100, min: -100, stepSize: 20, fontColor: "#8997bd" } }],
 	        },
 	        legend:{
-	        	display: true,
+	        	display: legendOp,
 	        	position:"bottom",
 	        	align:"start",
 	        	labels:{
@@ -137,6 +143,9 @@ function header_fun(){
 	        }
 	    }
 	});
+
+
+	
 
 
 });

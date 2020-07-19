@@ -80,3 +80,174 @@
 }
 
 
+
+.doc-thumb-box{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin-bottom: -18px;
+	li{
+		height: 205px;
+		width: 205px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align:center;
+		-ms-flex-align:center;
+		align-items:center;
+		-webkit-box-pack:center;
+		-ms-flex-pack:center;
+		justify-content:center;
+		border: 1px solid #BECAE6;
+		border-radius: 15px;
+		margin-right: 18px;
+		margin-bottom: 18px;
+		a{
+			display: inline-block;
+			padding: 30px;
+		}
+	}
+}
+
+.price-sm-card{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 25px;
+	margin-bottom: 20px;
+	h3{
+		margin-left: auto;
+		font-size: 25px;
+		font-weight: normal;
+		color: #00DCD3; 
+	}
+	.left-info{
+		position: relative;
+		padding-left: 24px;
+		h6{
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 23px;
+			margin-bottom: 2px;
+		}
+		small{
+			font-size: 13px;
+			color: #7081B9; 
+		}
+		.lg-dot{
+			position: absolute;
+			top: 8px; 
+			left: 0; 
+			background: #00DCD3;
+		}
+	}
+}
+.price-highlight{
+	h3{
+		color: #595AE3; 
+	}
+	.left-info{
+		.lg-dot{
+			background: #BECAE6;
+		}
+	}
+}
+
+.checkout-card-area{
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	.cards-header{
+		background: #BECAE6;
+		padding: 50px 20px 40px 20px; 
+		border-radius: 10px; 
+	}
+	.table-sm {
+	  padding: 28px 0 28px 42px;  
+	}
+	.table-sm .table {
+	  margin-bottom: 0;
+	}
+	.table-sm .table th {
+	  background: #EDF0F5;
+	  border-bottom: 0;
+	  padding: 11px 20px;
+	  text-align: center;
+	}
+	.table-sm .table th:first-child {
+	  border-radius: 10px 0 0 10px;
+	  text-align: left;
+	}
+	.table-sm .table th:last-child {
+	  border-radius: 0 10px 10px 0;
+	  text-align: right;
+	}
+	.table-sm .table td {
+	  border-bottom: 0;
+	  padding: 11px 20px;
+	  position: relative;
+	  text-align: center;
+	}
+	.table-sm .table td .cancel-btn {
+	  position: absolute;
+	  right: 100%;
+	  background: transparent;
+	  border: transparent;
+	  color: #7081B9;
+	}
+	.table-sm .table td:first-child {
+	  text-align: left;
+	}
+	.table-sm .table td:last-child { 
+	  text-align: right;
+	} 
+	.table-footer {
+		padding: 15px 23px;
+		background: #7081B9;
+		color: #fff;
+		border-radius: 13px;
+		margin-top: 10px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.body {
+		padding: 0px 20px;
+	}
+}
+.card-title{
+	font-size: 28px;
+	line-height: 26px;
+	small{
+		font-size: 13px;
+		display: inline-block; 
+		margin-bottom: 0;
+	}
+	p{
+		font-size: 18px;
+		display: inline-block;
+		margin-bottom: 0;
+	}
+}
+
+.pay-cart-list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	li { 
+		display: inline-block;
+		width: 50px;
+		text-align: center;
+		margin-right: 36px;
+		margin-top: 15px;
+		&:last-child{
+			margin-right: 0; 
+		}
+	}
+}

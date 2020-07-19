@@ -35,6 +35,7 @@ body {
   color: #161637;
   background-color: var(--body-bg);
   overflow-x: hidden;
+  font-weight: normal;
 }
 
 img {
@@ -122,7 +123,7 @@ a, button, input, textarea {
 
 .btn {
   font-size: 18px;
-  padding: 13px 24px;
+  padding: 17px 24px;
   font-weight: 500;
   border-radius: 9px;
   line-height: 23px;
@@ -176,6 +177,10 @@ a, button, input, textarea {
   color: var(--c-info);
 }
 
+.btn .left-icon {
+  margin-right: 14px;
+}
+
 .text-upp {
   text-transform: uppercase;
 }
@@ -201,6 +206,15 @@ a, button, input, textarea {
   font-size: 18px;
   font-weight: 500;
 }
+.panel-title h2 {
+  font-size: 38px;
+  line-height: 50px;
+  font-weight: 400;
+}
+.panel-title p {
+  font-size: 15px;
+  font-weight: normal;
+}
 
 .lg-dot {
   height: 10px;
@@ -216,6 +230,76 @@ a, button, input, textarea {
   width: 220px;
   border-radius: 50%;
   border: 1px solid #BECAE6;
+}
+
+.btnw-250 {
+  width: 250px;
+}
+
+.text-info {
+  color: var(--c-info) !important;
+}
+
+.cust-switcher {
+  position: relative;
+}
+.cust-switcher input[type=checkbox] {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.cust-switcher label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 28px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  -webkit-transition: cubic-bezier(0.22, 0.61, 0.36, 1) 0.25s;
+  -o-transition: cubic-bezier(0.22, 0.61, 0.36, 1) 0.25s;
+  transition: cubic-bezier(0.22, 0.61, 0.36, 1) 0.25s;
+}
+.cust-switcher label:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.cust-switcher input:checked + label {
+  background: #bada55;
+}
+.cust-switcher input:checked + label:after {
+  left: calc(100% - 4px);
+  transform: translateX(-100%);
+}
+.cust-switcher input[type=checkbox]:active label::after {
+  width: 30px;
+}
+
+.switcher-area .switcher-title-1 {
+  margin-right: 20px;
+}
+.switcher-area .switcher-title-2 {
+  margin-left: 20px;
+}
+
+.deliverable-switcher label {
+  background-color: #00F1E7;
+}
+.deliverable-switcher input:checked + label {
+  background: #00DCD3;
 }
 
 .radio-button-field {
@@ -592,6 +676,8 @@ a, button, input, textarea {
 .esearch-field .form-control {
   border-color: #BECAE6;
   margin-right: 10px;
+  min-height: 60px;
+  padding-left: 25px;
 }
 
 .tooltip {
@@ -897,6 +983,175 @@ a, button, input, textarea {
   margin-right: 8px;
 }
 
+.doc-thumb-box {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: -18px;
+}
+.doc-thumb-box li {
+  height: 205px;
+  width: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #BECAE6;
+  border-radius: 15px;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+.doc-thumb-box li a {
+  display: inline-block;
+  padding: 30px;
+}
+
+.price-sm-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+.price-sm-card h3 {
+  margin-left: auto;
+  font-size: 25px;
+  font-weight: normal;
+  color: #00DCD3;
+}
+.price-sm-card .left-info {
+  position: relative;
+  padding-left: 24px;
+}
+.price-sm-card .left-info h6 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 2px;
+}
+.price-sm-card .left-info small {
+  font-size: 13px;
+  color: #7081B9;
+}
+.price-sm-card .left-info .lg-dot {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: #00DCD3;
+}
+
+.price-highlight h3 {
+  color: #595AE3;
+}
+.price-highlight .left-info .lg-dot {
+  background: #BECAE6;
+}
+
+.checkout-card-area {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.checkout-card-area .cards-header {
+  background: #BECAE6;
+  padding: 50px 20px 40px 20px;
+  border-radius: 10px;
+}
+.checkout-card-area .table-sm {
+  padding: 28px 0 28px 42px;
+}
+.checkout-card-area .table-sm .table {
+  margin-bottom: 0;
+}
+.checkout-card-area .table-sm .table th {
+  background: #EDF0F5;
+  border-bottom: 0;
+  padding: 11px 20px;
+  text-align: center;
+}
+.checkout-card-area .table-sm .table th:first-child {
+  border-radius: 10px 0 0 10px;
+  text-align: left;
+}
+.checkout-card-area .table-sm .table th:last-child {
+  border-radius: 0 10px 10px 0;
+  text-align: right;
+}
+.checkout-card-area .table-sm .table td {
+  border-bottom: 0;
+  padding: 11px 20px;
+  position: relative;
+  text-align: center;
+}
+.checkout-card-area .table-sm .table td .cancel-btn {
+  position: absolute;
+  right: 100%;
+  background: transparent;
+  border: transparent;
+  color: #7081B9;
+}
+.checkout-card-area .table-sm .table td:first-child {
+  text-align: left;
+}
+.checkout-card-area .table-sm .table td:last-child {
+  text-align: right;
+}
+.checkout-card-area .table-footer {
+  padding: 15px 23px;
+  background: #7081B9;
+  color: #fff;
+  border-radius: 13px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.checkout-card-area .body {
+  padding: 0px 20px;
+}
+
+.card-title {
+  font-size: 28px;
+  line-height: 26px;
+}
+.card-title small {
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.card-title p {
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.pay-cart-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.pay-cart-list li {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  margin-right: 36px;
+  margin-top: 15px;
+}
+.pay-cart-list li:last-child {
+  margin-right: 0;
+}
+
 .search-box-field {
   position: relative;
 }
@@ -1132,7 +1387,6 @@ a, button, input, textarea {
 }
 
 #lineChart {
-  height: 400px;
   width: 100%;
 }
 
